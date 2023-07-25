@@ -14,7 +14,7 @@ Welcome to Tindog - the ultimate app for pets to find their perfect matches! Thi
 
 ## Introduction
 
-Tindog is an exciting project that simulates a dating app for pets. It allows pet owners to browse through other pets' profiles. 
+Tindog is an exciting project that simulates a dating app for pets. It allows pet owners to browse through other pets' profiles.
 
 ## Design Spec
 
