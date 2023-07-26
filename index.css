@@ -4,3 +4,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+body {
+  background: linear-gradient(180deg, #fff 0%, #f6f7fb 100%);
+}
