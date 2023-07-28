@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,10 +7,53 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background: linear-gradient(180deg, #fff 0%, #f6f7fb 100%);
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1em;
   background-color: #fff;
+}
+
+/* PROFILE */
+
+.card {
+  background-color: #fff;
+}
+
+.profile {
+  position: relative;
+  max-width: 95%;
+  margin: auto;
+}
+
+.profile img {
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.profile-content {
+  position: absolute;
+  bottom: 15px;
+  left: 12px;
+}
+
+.profile-content h3 {
+  color: #f8f8f8;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.profile-content span {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #b7b7b7;
 }
