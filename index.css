@@ -8,9 +8,9 @@
 }
 
 body {
-  background: linear-gradient(180deg, #fff 0%, #f6f7fb 100%);
   max-width: 550px;
   margin: 0 auto;
+  background: linear-gradient(180deg, #fff 0%, #f6f7fb 100%);
 }
 
 /* HEADER */
@@ -24,10 +24,6 @@ header {
 }
 
 /* PROFILE */
-
-.card {
-  background-color: #fff;
-}
 
 .profile {
   position: relative;
@@ -56,4 +52,26 @@ header {
   font-size: 1.5rem;
   font-weight: 400;
   color: #b7b7b7;
+}
+
+/* BUTTON CONTAINER */
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  gap: 1.5em;
+}
+
+.btn-container button {
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  padding: 1em;
+  box-shadow: 0px 10px 20px 0px #e9e9ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
