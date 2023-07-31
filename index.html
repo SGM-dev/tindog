@@ -34,12 +34,18 @@
     </header>
     <main id="card">
       <div class="profile">
-        <!-- <img
-            id="like"
-            class="badge-like"
-            src="/images/badge-like.png"
-            alt="like badge"
-          /> -->
+        <img
+          id="like-badge"
+          class="badge like hidden"
+          src="/images/badge-like.png"
+          alt="like badge"
+        />
+        <img
+          id="nope-badge"
+          class="badge nope hidden"
+          src="/images/badge-nope.png"
+          alt="nope badge"
+        />
         <div class="profile-content">
           <h3>Teddy, 30</h3>
           <span>How you doin?</span>
@@ -51,7 +57,9 @@
       <button id="reject-btn">
         <img src="/images/icon-cross.svg" alt="Reject button" />
       </button>
-      <button id="like-btn"><img src="/images/icon-heart.svg" alt="Like button" /></button>
+      <button id="like-btn">
+        <img src="/images/icon-heart.svg" alt="Like button" />
+      </button>
     </section>
     <script src="/index.js" type="module"></script>
   </body>

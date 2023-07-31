@@ -38,8 +38,8 @@ header {
 
 .profile-content {
   position: absolute;
-  bottom: 15px;
-  left: 12px;
+  bottom: 20px;
+  left: 25px;
 }
 
 .profile-content h3 {
@@ -81,5 +81,19 @@ header {
 }
 
 #reject-btn:hover {
-  background-color: #FFE7EF;
+  background-color: #ffe7ef;
+}
+
+/* BADGE */
+
+.badge {
+  transform: rotate(-30deg);
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  width: 40%;
+}
+
+.hidden {
+  display: none;
 }
