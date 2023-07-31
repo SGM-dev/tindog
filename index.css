@@ -75,3 +75,11 @@ header {
   justify-content: center;
   cursor: pointer;
 }
+
+#like-btn:hover {
+  background-color: #dbfff4;
+}
+
+#reject-btn:hover {
+  background-color: #FFE7EF;
+}
