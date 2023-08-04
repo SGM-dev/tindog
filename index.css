@@ -76,6 +76,10 @@ header {
   cursor: pointer;
 }
 
+.btn-container button img {
+  pointer-events: none;
+}
+
 #like-btn:hover {
   background-color: #dbfff4;
 }
