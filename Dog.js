@@ -5,6 +5,10 @@ class Dog {
     Object.assign(this, data);
   }
 
+  setStatus(status) {
+    this.hasBeenLiked = status;
+    this.hasBeenSwiped = true;
+  }
   getDogHtml() {
     const { name, avatar, age, bio } = this;
     return `
