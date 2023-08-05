@@ -18,7 +18,7 @@ Tindog is an exciting project that simulates a dating app for pets. It allows pe
 
 ## Design Spec
 
-The design of the Tindog app is provided in the Figma file [Tindog Design Spec](https://www.figma.com/file/LdlksbT0QYLpRlHrOlKDuc/Tinder-for-Dogs?type=design&node-id=0-1&mode=design). To achieve the best learning outcome, it's important to follow the design spec closely and implement the user interface as specified.
+The design of the Tindog app is provided in the Figma file [Tindog Design Spec](https://www.figma.com/file/LdlksbT0QYLpRlHrOlKDuc/Tinder-for-Dogs?type=design&node-id=0-1&mode=design). It's important to follow the design spec closely and implement the user interface as specified.
 
 ## Technologies Used
 
@@ -43,6 +43,8 @@ To get started with Tindog on your local machine, follow these steps:
 1. Open the project directory in VS Code and locate the `index.html` file.
 2. Right click the `index.html` file and select Open with Live Server.
 3. Interact with the Tindog app and enjoy finding cute pets!
+
+To get started with Tindog on the web, go to https://sgm-tindog.netlify.app/
 
 ## License
 
