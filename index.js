@@ -2,18 +2,38 @@
 import Dog from "./Dog.js";
 import dogs from "./data.js";
 
-let currentDog = new Dog(dogs.shift());
+const dogsData = dogs;
+
+let currentDog = new Dog(dogsData.shift());
+let isWaiting = false;
 
 document.addEventListener("click", function (e) {
   if (e.target.id == "like-btn") {
-    getNewDog();
+    action(true);
   } else if (e.target.id == "reject-btn") {
-    getNewDog();
+    action(false);
   }
 });
 
+function action(bool) {
+  if (!isWaiting) {
+    isWaiting = true;
+    let actionEl = bool ? "like-badge" : "nope-badge";
+    document.getElementById(actionEl).classList.remove("hidden");
+    if (!dogsData) {
+      console.log("game over");
+    } else {
+      setTimeout(() => {
+        currentDog.setStatus(bool);
+        getNewDog();
+        isWaiting = false;
+      }, 1500);
+    }
+  }
+}
+
 function getNewDog() {
-  const nextDogData = dogs.shift();
+  const nextDogData = dogsData.shift();
   currentDog = new Dog(nextDogData);
   render();
 }
