@@ -42,16 +42,29 @@ header {
   left: 25px;
 }
 
-.profile-content h3 {
+.profile-content h3,
+.end-content h3 {
   color: #f8f8f8;
   font-size: 2rem;
   font-weight: 600;
 }
 
-.profile-content span {
+.end-content h3 {
+  color: #000;
+
+}
+
+
+.profile-content span,
+.end-content span {
   font-size: 1.5rem;
   font-weight: 400;
   color: #b7b7b7;
+}
+
+.end-content span {
+  color: #525252;
+
 }
 
 /* BUTTON CONTAINER */
@@ -100,4 +113,10 @@ header {
 
 .hidden {
   display: none;
+}
+
+.end-content {
+  position: absolute;
+  top: 10%;
+  left: 2%;
 }

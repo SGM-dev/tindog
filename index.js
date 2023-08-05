@@ -36,9 +36,9 @@ function action(bool) {
 function endSwipe() {
   document.getElementById("card").innerHTML = `
   <div class="profile">
-  <div class="profile-content">
+  <div class="end-content">
       <h3>You Ran out of Swipes!</h3>
-      <span>Refresh the page to start again</span>
+      <span>Refresh the page to start again.</span>
   </div>
   <img src="images/sad.webp" alt="Pet's Picture" />
 </div>`;
