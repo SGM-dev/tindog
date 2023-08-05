@@ -12,6 +12,18 @@ document.addEventListener("click", function (e) {
     action(true);
   } else if (e.target.id == "reject-btn") {
     action(false);
+  } else if (e.target.id == "refresh-btn") {
+    document.getElementById("card").innerHTML = `
+    <div class="profile">
+    <div class="end-content">
+        <h3>Refreshing...</h3>
+    </div>
+    <img src="images/sad.webp" alt="Pet's Picture" />
+  </div>`;
+    document.querySelector(".btn-container").innerHTML = ``;
+    setTimeout(() => {
+      location.reload();
+    }, 1500);
   }
 });
 
@@ -28,7 +40,9 @@ function action(bool) {
         isWaiting = false;
       }, 1500);
     } else {
-      endSwipe();
+      setTimeout(() => {
+        endSwipe();
+      }, 1500);
     }
   }
 }
@@ -43,7 +57,10 @@ function endSwipe() {
   <img src="images/sad.webp" alt="Pet's Picture" />
 </div>`;
 
-  document.querySelector(".btn-container").innerHTML = ``;
+  document.querySelector(".btn-container").innerHTML = `
+  <button id="refresh-btn">
+    <img src="images/icons8-refresh.svg" alt="Refresh button" />
+  </button>`;
 }
 
 function getNewDog() {
