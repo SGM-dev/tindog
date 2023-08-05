@@ -2,7 +2,7 @@
 import Dog from "./Dog.js";
 import dogs from "./data.js";
 
-const dogsData = dogs;
+let dogsData = dogs;
 
 let currentDog = new Dog(dogsData.shift());
 let isWaiting = false;
@@ -20,22 +20,35 @@ function action(bool) {
     isWaiting = true;
     let actionEl = bool ? "like-badge" : "nope-badge";
     document.getElementById(actionEl).classList.remove("hidden");
-    if (!dogsData) {
-      console.log("game over");
-    } else {
+    if (dogsData.length > 0) {
       setTimeout(() => {
         currentDog.setStatus(bool);
         getNewDog();
+        render();
         isWaiting = false;
       }, 1500);
+    } else {
+      endSwipe();
     }
   }
+}
+
+function endSwipe() {
+  document.getElementById("card").innerHTML = `
+  <div class="profile">
+  <div class="profile-content">
+      <h3>You Ran out of Swipes!</h3>
+      <span>Refresh the page to start again</span>
+  </div>
+  <img src="images/sad.webp" alt="Pet's Picture" />
+</div>`;
+
+  document.querySelector(".btn-container").innerHTML = ``;
 }
 
 function getNewDog() {
   const nextDogData = dogsData.shift();
   currentDog = new Dog(nextDogData);
-  render();
 }
 
 function render() {
