@@ -120,3 +120,7 @@ header {
   top: 10%;
   left: 2%;
 }
+
+#refresh-btn img {
+  max-width: 2em;
+}
